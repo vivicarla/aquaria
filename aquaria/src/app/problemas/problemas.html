@@ -23,3 +23,31 @@ Mas apesar da imensidão, as águas marinhas existentes no globo vêm sofrendo m
 </div>
 
 </body>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-2 pb-16 max-w-6xl mx-auto w-full p-6">
+
+        <article *ngFor="let item of requisicao"
+            class="group bg-white/90 backdrop-blur-md rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-6 border border-slate-200 hover:-translate-y-2 hover:scale-[1.02]">
+
+            <div class="flex flex-col gap-4">
+
+                <img [src]="item.imagem" alt="Imagem da notícia" class="w-full h-40 object-cover rounded-xl mb-4">
+                <h3 class="text-2xl font-bold text-red-700">
+                    {{item.titulo}}
+                </h3>
+
+                <h3 class="text-xl font-semibold text-slate-800 group-hover:text-red-600 transition">
+                    {{item.not}}
+                </h3>
+
+                <div class="w-12 h-1 bg-red-600 rounded-full group-hover:w-16 transition-all duration-300"></div>
+
+                <!-- Descrição dinâmica -->
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    {{item.descricao}}
+                </p>
+
+            </div>
+        </article>
+
+    </div>
