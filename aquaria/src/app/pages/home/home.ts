@@ -14,13 +14,13 @@ export class Home {
       titulo: 'Economia Atual',
       not: 'Economia baseada na pesca',
       descricao: 'Aquária depende quase totalmente da pesca artesanal como principal fonte de renda e alimento para sua população.',
-      imagem: 'https://estaticos.opara.me/outraspalavras/uploads/2022/04/05180154/220405-PescaB.jpg',
+      imagem: 'https://marsemfim.com.br/wp-content/uploads/2019/10/redes-de-pesca-c%C3%B3pia.jpg',
     },
     {
       titulo: 'Problema Ambiental',
       not: 'Recursos em risco',
       descricao: 'A pesca excessiva e a poluição estão reduzindo drasticamente a quantidade de peixes, ameaçando o equilíbrio marinho.',
-      imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6NGG3DF_i5awFCsAbYQZWbrhsR7g8N4sM6g&s',
+      imagem: 'https://www.pensamentoverde.com.br/wp-content/uploads/2023/04/os-perigos-da-pesca-sem-controle.png',
     },
     {
       titulo: 'Desafio',

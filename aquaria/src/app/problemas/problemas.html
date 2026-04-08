@@ -1,10 +1,14 @@
 <main class="bg-slate-900">
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-2 pb-16 max-w-6xl mx-auto w-full p-60">
+    
+
+    
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-2 pb-16 max-w-6xl mx-auto w-full p-60 ">
 
         <article *ngFor="let item of pipi"
             class="group bg-white/90 backdrop-blur-md rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-6 border border-slate-200 hover:-translate-y-2 hover:scale-[1.02]">
 
             <div class="flex flex-col gap-4">
+                    
 
                 <img [src]="item.imagem" alt="Imagem da notícia" class="w-full h-40 object-cover rounded-xl mb-4">
                 <h3 class="text-2xl font-bold text-red-700">
@@ -24,6 +28,7 @@
 
             </div>
         </article>
+        
 
     </div>
     </main>
