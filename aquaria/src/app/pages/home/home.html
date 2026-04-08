@@ -1,7 +1,7 @@
 <main class="flex flex-col min-h-screen bg-slate-900 overflow-hidden">
     <div class="bg-slate-600/10">
-        <header class="text-center md:text-left px-6 pt-16 pb-10 max-w-6xl mx-auto w-full"  >
-           
+        <header class="text-center md:text-left px-6 pt-16 pb-10 max-w-6xl mx-auto w-full">
+
             <h2 class="text-4xl md:text-5xl font-extrabold text-slate-100 leading-tight ">
                 Bem-vindo a <span class="text-red-500">Aquária</span> Noticías
             </h2>
@@ -11,9 +11,29 @@
             </p>
 
         </header>
-        </div>
-        <div>
-            
-        </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-2 pb-16 max-w-6xl mx-auto w-full">
 
+        <article *ngFor="let item of requisicao"
+            class="group bg-white/90 backdrop-blur-md rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-6 border border-slate-200 hover:-translate-y-2 hover:scale-[1.02]">
+
+            <div class="flex flex-col gap-4">
+
+                <img [src]="item.imagem" alt="Imagem da notícia" class="w-full h-40 object-cover rounded-xl mb-4">
+
+                <h3 class="text-xl font-bold text-slate-800 group-hover:text-blue-500 transition">
+                    {{item.not}}
+                </h3>
+
+                <div class="w-12 h-1 bg-blue-500 rounded-full group-hover:w-16 transition-all duration-300"></div>
+
+                <!-- Descrição dinâmica -->
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    {{item.descricao}}
+                </p>
+
+            </div>
+        </article>
+
+    </div>
 </main>
