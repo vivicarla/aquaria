@@ -23,7 +23,7 @@ export class Home {
     {
       not: 'Futuro incerto',
       descricao: 'Sem mudanças urgentes, a economia e o sustento da população podem entrar em colapso.',
-      imagem: 'https://aquaria.com.br/wp-content/uploads/2023/11/peixe-azul.jpg',
+      imagem: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGjv2OGlfYYSVP7QOnP5hdwV1buTzXl_RCXa3Z4au2LxBBokbS',
     }
   ];
 }

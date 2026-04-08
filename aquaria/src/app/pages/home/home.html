@@ -12,7 +12,7 @@
 
         </header>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-2 pb-16 max-w-6xl mx-auto w-full">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-2 pb-16 max-w-6xl mx-auto w-full p-6">
 
         <article *ngFor="let item of requisicao"
             class="group bg-white/90 backdrop-blur-md rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-6 border border-slate-200 hover:-translate-y-2 hover:scale-[1.02]">
@@ -28,7 +28,7 @@
                 <div class="w-12 h-1 bg-blue-500 rounded-full group-hover:w-16 transition-all duration-300"></div>
 
                 <!-- Descrição dinâmica -->
-                <p class="text-slate-600 text-sm leading-relaxed">
+                <p class="text-slate-600 text-lg leading-relaxed">
                     {{item.descricao}}
                 </p>
 
