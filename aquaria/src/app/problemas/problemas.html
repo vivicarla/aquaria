@@ -1,19 +1,22 @@
 <main class="bg-slate-900">
-    <div class="">
-            <p class="mt-6 text-2xl text-slate-200 flex-initial w-180 p-16 m-20 font-bold font-mono text-3xl text-justify">
-                Aquária enfrenta uma grave crise ambiental causada pela exploração excessiva dos recursos marinhos e pela poluição. A falta de controle e de políticas sustentáveis tem colocado em risco tanto o meio ambiente quanto a sobrevivência da população que depende da pesca.
-            </p>
+        <article>
+            <img class="float-right" src="https://www.portaldoagronegocio.com.br/img/cache/cover//storage/images/notices/667782d117d14.jpg">
+            <p> Aquária enfrenta uma grave crise ambiental causada pela exploração excessiva dos recursos marinhos e pela
+            poluição. A falta de controle e de políticas sustentáveis tem colocado em risco tanto o meio ambiente quanto
+            a sobrevivência da população que depende da pesca.</p>
+        </article>
 
-    </div>
+        <!--<p class="mt-6 text-2xl text-slate-200 flex-initial w-180 p-16 m-20 font-bold font-mono text-3xl text-justify">
+           
+        </p>-->
 
-    
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1 px-2 pb-16 max-w-6xl mx-auto w-full p-10 ">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1 px-2 pb-16 max-w-6xl mx-auto w-full p-10 ">
 
         <article *ngFor="let item of pipi"
             class="group bg-white/90 backdrop-blur-md rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-6 border border-slate-200 hover:-translate-y-2 hover:scale-[1.02]">
 
             <div class="flex flex-col gap-4">
-                    
+
 
                 <img [src]="item.imagem" alt="Imagem da notícia" class="w-full h-40 object-cover rounded-xl mb-4">
                 <h3 class="text-2xl font-bold text-red-700">
@@ -33,7 +36,7 @@
 
             </div>
         </article>
-        
+
 
     </div>
-    </main>
+</main>
