@@ -26,7 +26,7 @@ export class Home {
       titulo: 'Desafio',
       not: 'Futuro incerto',
       descricao: 'Sem mudanças urgentes, a economia e o sustento da população podem entrar em colapso.',
-      imagem: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGjv2OGlfYYSVP7QOnP5hdwV1buTzXl_RCXa3Z4au2LxBBokbS',
+      imagem: 'https://imagens.ebc.com.br/l5L6DQWnanC3KpATYnqaClHB8wI=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/atoms/image/1091883-rj_tanrgo_abr_21092017_82t2057.jpg?itok=91gi4Hxz',
     }
   ];
 }
