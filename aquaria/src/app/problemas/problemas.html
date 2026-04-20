@@ -1,8 +1,24 @@
 <main class="bg-slate-900">
+    <div>
+        <header class="text-center md:text-left px-6 pt-16 pb-10 max-w-6xl mx-auto w-full">
+
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-100 leading-tight ">
+                Problemas enfrentados por Aquária
+            </h2>
+
+            <p class="mt-4 text-2xl font-extrabold text-slate-200 max-w-xl">
+                Conheça os desafios que ameaçam a sustentabilidade de Aquária
+            </p>
+            <p class="mt-4 text-2xl text-slate-200 max-w-xl">
+                Aquária enfrenta uma grave crise ambiental causada pela exploração excessiva dos recursos marinhos e pela poluição. A falta de controle e de políticas sustentáveis tem colocado em risco tanto o meio ambiente quanto a sobrevivência da população que depende da pesca.
+            </p>
+
+        </header>
+    </div>
     
 
     
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-2 pb-16 max-w-6xl mx-auto w-full p-60 ">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-2 pb-16 max-w-6xl mx-auto w-full p-20 ">
 
         <article *ngFor="let item of pipi"
             class="group bg-white/90 backdrop-blur-md rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-6 border border-slate-200 hover:-translate-y-2 hover:scale-[1.02]">
@@ -25,10 +41,19 @@
                 <p class="text-slate-600 text-lg leading-relaxed ">
                     {{item.descricao}}
                 </p>
-
             </div>
         </article>
-        
+    </div>
+    <div>
+         <header class="text-center md:text-left px-6 pt-16 pb-10 max-w-6xl mx-auto w-full">
 
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-100 leading-tight ">
+                Sem equilíbrio, o oceano deixa de sustentar quem depende dele.
+            </h2>
+            <p class="mt-4 text-2xl text-slate-200 max-w-xl">
+                A combinação entre sobrepesca e poluição cria um ciclo negativo: quanto menos peixes existem, mais intensa se torna a exploração dos recursos restantes. Sem intervenção, esse processo pode levar ao colapso ambiental e econômico de Aquária.
+            </p>
+
+        </header>   
     </div>
     </main>
