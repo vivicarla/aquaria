@@ -1,0 +1,48 @@
+<main class="bg-slate-900">
+<section class="min-h-screen bg-slate-900 py-16 px-6">
+  <div class="max-w-7xl mx-auto">
+    
+    <div class="text-center mb-16">
+      <h1 class="text-4xl font-black text-slate-50 uppercase tracking-tighter">
+        Sobre a <span class="text-red-500">Equipe</span>
+      </h1>
+      <p class="mt-4 text-slate-500 font-medium max-w-2xl mx-auto">
+        Conheça as mentes por trás do nosso conteúdo técnico e das atualizações.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div *ngFor="let perfil of Sobre" 
+           class="bg-white border border-slate-200 rounded-[2.5rem] p-8 shadow-sm hover:shadow-2xl transition-all duration-500 group">
+        
+        <div class="w-16 h-16 bg-slate-900 rounded-2xl mb-6 transform group-hover:-rotate-12 transition-transform flex items-center justify-center shadow-lg">
+          <span class="text-white font-black text-xl uppercase">{{ perfil.nome[0] }}</span>
+        </div>
+
+        <h2 class="text-2xl font-bold text-slate-900 leading-tight italic">{{ perfil.nome }}</h2>
+        <p class="text-red-500 font-bold text-[10px] uppercase tracking-[0.2em] mt-1">{{ perfil.funcao }}</p>
+
+        <p class="mt-4 text-slate-500 text-sm leading-relaxed">
+          {{ perfil.bio }}
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span *ngFor="let tech of perfil.techs" 
+                class="px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-black rounded-lg uppercase">
+            {{ tech }}
+          </span>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="mt-20 text-center text-slate-300 text-[10px] font-black uppercase tracking-[0.5em]">
+      Aquaria Notícias• Seção Sobre os autores • 2026
+    </div>
+
+  </div>
+</section>
+</main>
